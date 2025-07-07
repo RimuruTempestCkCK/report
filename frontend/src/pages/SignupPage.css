@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.signuppage-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signuppage-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.signuppage-box {
+  position: relative;
+  width: 650px;
+  height: 550px;
+  display: flex;
+  flex-direction: row; /* ubah arah kiri-kanan menjadi kanan-kiri */
+  border-radius: 20px;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.signuppage-left {
+  order: 1;
+  width: 400px;
+  background: #A00040;
+  padding: 30px 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #fffdf0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.signuppage-tab {
+  position: relative;
+  right: 30px;
+  top: 200px;
+  background-color: #A00040;
+  color: #fffdf0;
+  padding: 10px 10px 10px 30px;
+  font-size: 18px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: fit-content;
+  width: 70px;
+  height: 30px;
+  display: flex;
+}
+
+.signuppage-login {
+  font-size: 18px;
+  margin-top: 110px;
+  width: 110px;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+}
+
+.signuppage-right {
+  order: 2;
+  width: 100px;
+  background: #fffdf0;
+  color: #A00040;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.signuppage-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  top: 10px;
+}
+
+.signuppage-logo-img {
+  width: 200px;
+  height: auto;
+}
+
+.signuppage-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.signuppage-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.signuppage-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fffdf0;
+}
+
+.signuppage-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.signuppage-input-wrapper input[type="text"],
+.signuppage-input-wrapper input[type="email"],
+.signuppage-input-wrapper input[type="password"] {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fffdf0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.singuppage-input-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.singuppage-input-wrapper input:focus {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.signuppage-input-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 16px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.singuppage-role-wrapper {
+  display: flex;
+  gap: 100px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.singuppage-role-wrapper label {
+  cursor: pointer;
+}
+
+.singuppage-role-wrapper input[type="radio"] {
+  margin-right: 6px;
+}
+
+.signup-btn {
+  width: 160px;
+  padding: 12px 0;
+  background: #fffdf0;
+  color: #A00040;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.signup-btn:hover {
+  background: #ffddf0;
+  transform: translateY(-1px);
+}

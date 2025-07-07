@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap');
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #A00040;
+  color: #330222;
+}
+
+.header {
+  position: fixed;   
+  top: 0;
+  left: 0;
+  width: 90%;   
+  z-index: 1000;     
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+}
+
+.landing-container {
+  padding-top: 90px; 
+}
+
+.logo-img {
+  width: 100px; 
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transform: scale(1.5);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  margin: 0;
+  padding: 15px 100px;
+  background: #fffdf0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #A00040;
+  font-family: "Fredoka One", cursive;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d0133d;
+}
+
+.login-button-wrapper {
+  flex-shrink: 0;
+}
+
+.login-btn {
+  background-color: #fffdf0;
+  color: #A00040;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Fredoka One", cursive;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.login-btn:hover {
+  background-color: #faf2c6;
+}
+
+.hero {
+  color: #fff7f4;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 85px;
+  font-family: "Fredoka One", cursive;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.hashtag {
+  color: #fffdf0;
+}
+
+.hero-img {
+  width: 450px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.intro-wrapper {
+  background-color: #fffdf0;
+  padding-bottom: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  min-height: 600px;
+}
+
+.intro {
+  padding: 10px 10px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #A00040;
+}
+
+.intro p {
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  color: #A00040;
+  margin: 0 auto 30px;
+  max-width: 1100px;
+  padding: 0 10px; 
+  text-align: justify;
+  box-sizing: border-box; 
+}
+
+.learn-more-btn {
+  background-color: #A00040;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 20px;
+  color: #fffdf0;
+  cursor: pointer;
+  font-family: "Fredoka One", cursive;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #d0133d;
+}
+
+.features {
+  padding: 0 30px 10px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 50px;
+  margin-bottom: 35px;
+  color: #A00040;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-content {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-text h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  color: #A00040;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.feature-text {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.feature-content p {
+  font-size: 20px;
+  color: #A00040;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}
+
+.feature-item.reverse .feature-content {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .feature-content {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .feature-content img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .feature-content p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .feature-text h3 {
+    text-align: center;
+  }
+}
+
+.demo {
+  padding: 20px 0 60px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demo h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #A00040;
+}
+
+.video-wrapper {
+  display: inline-block;
+  max-width: 720px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.25);
+}
+
+.faq {
+  padding: 20px 0 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #A00040;
+  text-align: center;
+  cursor: default;
+}
+
+.faq-item {
+  margin: 0 auto 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 25px;
+  margin: 0;
+  color: #A00040;
+}
+
+.arrow {
+  font-size: 25px;
+  color: #A00040;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #A00040;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  color: #fffdf0;
+  font-family: "Poppins", sans-serif;
+}
