@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-MySQLdb==1.0.1
+Flask-Cors==3.0.10
+bcrypt==4.0.1
+python-dotenv==1.0.0
+flask-jwt-extended==4.4.4
